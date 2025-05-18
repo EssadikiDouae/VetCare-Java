@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:id="rootVBox" styleClass="vet-background vet-container" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.vetcare360.controllers.VeterinarianTableController">
+    <TextField fx:id="firstNameField" promptText="First Name" styleClass="vet-text-field"/>
+    <TextField fx:id="lastNameField" promptText="Last Name" styleClass="vet-text-field"/>
+    <TextField fx:id="specialtiesField" promptText="Specialties" styleClass="vet-text-field"/>
+    <Button text="Add Veterinarian" onAction="#handleAddVeterinarian" styleClass="vet-button"/>
+
+    <TableView fx:id="veterinarianTable" styleClass="vet-table">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" styleClass="vet-table-column"/>
+            <TableColumn fx:id="firstNameColumn" text="First Name" styleClass="vet-table-column"/>
+            <TableColumn fx:id="lastNameColumn" text="Last Name" styleClass="vet-table-column"/>
+            <TableColumn fx:id="specialtiesColumn" text="Specialties" styleClass="vet-table-column"/>
+        </columns>
+
+    </TableView>
+</VBox>

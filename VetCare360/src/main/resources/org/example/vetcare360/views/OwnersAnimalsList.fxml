@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.vetcare360.controllers.OwnersAnimalsListController"
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="900"
+      prefHeight="550"
+      fx:id="rootVBox">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Owners and Pets" styleClass="page-title"/>
+
+    <TableView fx:id="ownersAnimalsTable" prefHeight="400" prefWidth="850" styleClass="custom-table">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Owner Name" prefWidth="150"/>
+            <TableColumn fx:id="addressColumn" text="Address" prefWidth="180"/>
+            <TableColumn fx:id="cityColumn" text="City" prefWidth="100"/>
+            <TableColumn fx:id="telephoneColumn" text="Telephone" prefWidth="120"/>
+            <TableColumn fx:id="petsColumn" text="Pets" prefWidth="250"/>
+            <TableColumn fx:id="actionColumn" text="Actions" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Button text="Add Owner" onAction="#handleAddOwner" styleClass="custom-button"/>
+</VBox>

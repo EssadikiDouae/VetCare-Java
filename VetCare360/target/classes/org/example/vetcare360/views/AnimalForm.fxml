@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.vetcare360.controllers.AnimalFormController"
+      styleClass="vbox">
+
+    <Label fx:id="ownerNameLabel" text="Owner: " styleClass="label"/>
+    <TextField fx:id="animalNameField" promptText="Pet Name" styleClass="text-field"/>
+    <DatePicker fx:id="birthDatePicker" promptText="Birth Date" styleClass="date-picker"/>
+    <ComboBox fx:id="typeComboBox" promptText="Type" styleClass="combo-box"/>
+    <Button fx:id="addOrUpdatePetButton" text="Add Pet"
+            onAction="#handleAddOrUpdatePet" styleClass="buttonpet"/>
+</VBox>
+

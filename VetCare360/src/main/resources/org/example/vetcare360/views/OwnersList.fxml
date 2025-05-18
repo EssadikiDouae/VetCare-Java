@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.vetcare360.controllers.OwnersListController"
+      alignment="CENTER" spacing="20" styleClass="vboxx">
+    <Label text="Owners List" styleClass="labell"/>
+    <TableView fx:id="ownersTable" prefHeight="300" prefWidth="700" styleClass="table-vieww">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="40" styleClass="table-columnn"/>
+            <TableColumn fx:id="firstNameColumn" text="First Name" prefWidth="100" styleClass="table-columnn"/>
+            <TableColumn fx:id="lastNameColumn" text="Last Name" prefWidth="100" styleClass="table-columnn"/>
+            <TableColumn fx:id="cityColumn" text="City" prefWidth="100" styleClass="table-columnn"/>
+            <TableColumn fx:id="addressColumn" text="Address" prefWidth="150" styleClass="table-columnn"/>
+            <TableColumn fx:id="telephoneColumn" text="Telephone" prefWidth="100" styleClass="table-columnn"/>
+        </columns>
+    </TableView>
+</VBox>

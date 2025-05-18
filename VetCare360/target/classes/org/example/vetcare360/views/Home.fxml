@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<VBox fx:id="rootVBox"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.vetcare360.controllers.HomeController"
+      alignment="CENTER" spacing="20" styleClass="background"
+      prefWidth="532" prefHeight="304">
+
+    <Label text="Welcome to  VetCare360" styleClass="titl" alignment="CENTER"/>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Owners" onAction="#handleOwners" minWidth="228" minHeight="114" styleClass="button"/>
+        <Button text="Veterinarians" onAction="#handleVeterinarians" minWidth="228" minHeight="114" styleClass="button"/>
+    </HBox>
+
+    <Button text="All owners and them pets" onAction="#handleShowOwnersWithPets" minWidth="228" minHeight="114" styleClass="button"/>
+</VBox>

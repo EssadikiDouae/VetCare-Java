@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.vetcare360.controllers.OwnersSearchController"
+      fx:id="rootVBox"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 40;"
+      stylesheets="@/org/example/vetcare360/css/style.css">
+
+    <Label text="Find Owners" styleClass="title-label" />
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Last name" styleClass="field-label"/>
+
+        <TextField fx:id="lastNameField" promptText="Enter last name" styleClass="input-field"/>
+
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Find Owner" onAction="#handleFindOwner" styleClass="owner-button"/>
+        <Button text="Add Owner" onAction="#handleAddOwner" styleClass="owner-button"/>
+    </HBox>
+</VBox>

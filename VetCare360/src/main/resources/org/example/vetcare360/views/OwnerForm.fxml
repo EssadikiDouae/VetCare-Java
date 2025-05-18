@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.vetcare360.controllers.OwnerFormController"
+      alignment="CENTER" spacing="10" styleClass="owner-form-root">
+
+
+    <Label text="Add new  Owner" styleClass="owner-form-label"/>
+
+    <TextField fx:id="firstNameField" promptText="First Name" styleClass="owner-form-textfield "/>
+    <TextField fx:id="lastNameField" promptText="Last Name" styleClass="owner-form-textfield "/>
+    <TextField fx:id="addressField" promptText="Address" styleClass="owner-form-textfield "/>
+    <TextField fx:id="cityField" promptText="City" styleClass="owner-form-textfield "/>
+    <TextField fx:id="telephoneField" promptText="Telephone" styleClass="owner-form-textfield "/>
+
+    <Button fx:id="saveButton" text="Save" onAction="#handleSaveOwner" styleClass="owner-form-button                                                                                                                                                                                                      "/>
+</VBox>
